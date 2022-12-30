@@ -1,12 +1,9 @@
-Drop Table if Exists mysql_test_a;
-CREATE TABLE mysql_test_a ( 
-id INT(6)  PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL, 
-lastname VARCHAR(30) NOT NULL,  
-email VARCHAR(50), 
-reg_date TIMESTAMP 
-); 
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter 1st number: '))
+b = int(input('Enter 2nd number: '))
+
+print(f'Sum of {a} and {b} is {sum(a, b)}')
 
 
-INSERT INTO `mysql_test_a` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES ('1', 'John', 'Doe', 'john.doe@sqltest.net', CURRENT_TIMESTAMP);
-SELECT * FROM mysql_test_a;

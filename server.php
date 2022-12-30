@@ -88,6 +88,7 @@ if ($_POST['type'] === "python") {
             while ($row = $results->fetchArray()) {
                 $keys = (array_keys((array)$row));
                 $totalColumn = ($keys[Count($keys) - 2]);
+                $columnHTML="";
                 for ($i2 = 0; $i2 < Count($keys); $i2++) {
                     if ($i2 % 2 != 0) {
                         $columnHTML =  $columnHTML . "<th>" . $keys[$i2] . "</th>";
